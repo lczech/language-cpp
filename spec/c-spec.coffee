@@ -1,11 +1,11 @@
 {TextEditor} = require 'atom'
 
-describe 'Language-C', ->
+describe 'Language-CPP', ->
   grammar = null
 
   beforeEach ->
     waitsForPromise ->
-      atom.packages.activatePackage('language-c')
+      atom.packages.activatePackage('language-cpp')
 
   describe "C", ->
     beforeEach ->

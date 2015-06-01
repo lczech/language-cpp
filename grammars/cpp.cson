@@ -1,0 +1,98 @@
+'scopeName': 'source.cpp'
+'fileTypes': [
+  'cc'
+  'cpp'
+  'cp'
+  'cxx'
+  'c++'
+  'cu'
+  'cuh'
+  'h'
+  'hh'
+  'hpp'
+  'hxx'
+  'h++'
+  'inl'
+  'ipp'
+  'tcc'
+  'tpp'
+]
+'firstLineMatch': '-\\*- C\\+\\+ -\\*-'
+'name': 'C++'
+'patterns': [
+  {
+    'include': '#special_block'
+  }
+  {
+    'include': 'source.c'
+  }
+
+  # keywords
+  {
+    'match': '\\b(catch|operator|try|throw|using)\\b'
+    'name': 'keyword.control.cpp'
+  }
+  {
+    'match': '\\bdelete\\b(\\s*\\[\\])?|\\bnew\\b(?!])'
+    'name': 'keyword.control.cpp'
+  }
+  {
+    'match': '\\b(and|and_eq|bitand|bitor|compl|not|not_eq|or|or_eq|typeid|xor|xor_eq)\\b'
+    'name': 'keyword.operator.cpp'
+  }
+  {
+    'match': '\\b(const_cast|dynamic_cast|reinterpret_cast|static_cast)\\b\\s*'
+    'name': 'keyword.operator.cast.cpp'
+  }
+  {
+    'match': '\\bnamespace\\b\\s*'
+    'name': 'keyword.namespace.cast.cpp'
+  }
+
+  # meta
+  {
+    'match': '\\b(std)(::([a-zA-Z0-9_]*))+\\b'
+    'captures':
+      '1':
+        'name': 'meta.std.cpp'
+      '2':
+        'name': 'punctuation.namespace.cpp'
+      '3':
+        'name': 'meta.std.cpp'
+  }
+
+  # punctuation
+  {
+    'match': '::'
+    'name': 'punctuation.namespace.cpp'
+  }
+
+  # storage
+  {
+    'match': '\\b(friend|explicit|virtual)\\b'
+    'name': 'storage.modifier.cpp'
+  }
+  {
+    'match': '\\b(private:|protected:|public:)'
+    'name': 'storage.modifier.cpp'
+  }
+  {
+    'match': '\\b(constexpr|export|mutable|typename)\\b'
+    'name': 'storage.modifier.cpp'
+  }
+  {
+    'match': '\\btemplate\\b\\s*'
+    'name': 'storage.type.template.cpp'
+  }
+    {
+      # 'match': '\\b(class|wchar_t)\\s+[a-zA-Z0-9_]+\\b'
+      'match': '\\b(class|wchar_t)\\b'
+      'name': 'storage.type.cpp'
+    }
+
+  # variable
+  {
+    'match': '\\b(this|nullptr)\\b'
+    'name': 'variable.language.cpp'
+  }
+]
