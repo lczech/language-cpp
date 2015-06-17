@@ -69,11 +69,11 @@
 
   # storage
   {
-    'match': '\\b(friend|explicit|virtual)\\b'
+    'match': '\\b(friend|explicit|virtual|override)\\b'
     'name': 'storage.modifier.cpp'
   }
   {
-    'match': '\\b(private:|protected:|public:)'
+    'match': '\\b(private(:)?|protected(:)?|public(:)?)'
     'name': 'storage.modifier.cpp'
   }
   {

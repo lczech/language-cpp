@@ -14,7 +14,7 @@ Additional features on top of the original package:
 Missing features from the original package:
 
 * Specialized preprocessor commands. So far, this package marks all preprocessor directives
-  with the same tag, and does not distinguish further between then, e.g. pragmas or disabled
+  with the same tag, and does not distinguish further between them, e.g. pragmas or disabled
   blocks.
 * `libc` functions are not highlighted separatley.
 * Resolving function names is very basic so far. Every string follow by an opening parenthesis
