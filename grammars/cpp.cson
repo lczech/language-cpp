@@ -51,13 +51,13 @@
 
   # meta
   {
-    'match': '\\b(std)(::([a-zA-Z0-9_]*))+\\b'
+    'match': '\\b(std)((::)([a-zA-Z0-9_]+))+\\b'
     'captures':
       '1':
         'name': 'meta.std.cpp'
-      '2':
-        'name': 'punctuation.namespace.cpp'
       '3':
+        'name': 'punctuation.namespace.cpp'
+      '4':
         'name': 'meta.std.cpp'
   }
 
@@ -84,11 +84,11 @@
     'match': '\\btemplate\\b\\s*'
     'name': 'storage.type.template.cpp'
   }
-    {
-      # 'match': '\\b(class|wchar_t)\\s+[a-zA-Z0-9_]+\\b'
-      'match': '\\b(class|wchar_t)\\b'
-      'name': 'storage.type.cpp'
-    }
+  {
+    # 'match': '\\b(class|wchar_t)\\s+[a-zA-Z0-9_]+\\b'
+    'match': '\\b(class|wchar_t)\\b'
+    'name': 'storage.type.cpp'
+  }
 
   # variable
   {

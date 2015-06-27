@@ -90,7 +90,7 @@
       }
     ]
   }
-  
+
   # punctuation
   # TODO: all of them are handmade and non standard!
   {
@@ -114,7 +114,7 @@
     'name': 'punctuation.comparison.c'
   }
   {
-    'match': ',|;|:|~|\\+|-|\\*|/|\\%|\\||\\^|\\~'
+    'match': ',|;|:|~|\\+|-|\\*|/|\\%|\\||\\^|\\~|\\?'
     'name': 'punctuation.other.c'
   }
 
