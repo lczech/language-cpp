@@ -29,7 +29,7 @@
 
   # keywords
   {
-    'match': '\\b(catch|operator|try|throw|using)\\b'
+    'match': '\\b(catch|noexcept|operator|try|throw|using)\\b'
     'name': 'keyword.control.cpp'
   }
   {
