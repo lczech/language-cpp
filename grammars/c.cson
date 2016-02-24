@@ -36,8 +36,10 @@
     'match': '\\b(sizeof)\\b'
     'name': 'keyword.operator.sizeof.c'
   }
+
+  # Workaround for assert and catch (the latter should go into C++...)
   {
-    'match': '\\b(assert)\\s*(\\()\\b'
+    'match': '\\b(assert|catch)\\s*(\\()\\s*'
     'captures':
       '1':
         'name': 'keyword.other.c'
