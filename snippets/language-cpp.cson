@@ -43,19 +43,22 @@
     'body': 'if( ${1:/* condition */} ) {\n\t${2:/* code */}\n}'
   'If Else':
     'prefix': 'ife'
-    'body': 'if( ${1:/* condition */} ) {\n\t${2:/* code */}\n}\nelse {\n\t${3:/* code */}\n}'
+    'body': 'if( ${1:/* condition */} ) {\n\t${2:/* code */}\n} else {\n\t${3:/* code */}\n}'
   'If ElseIf':
     'prefix': 'iff'
-    'body': 'if( ${1:/* condition */} ) {\n\t${2:/* code */}\n}\nelse if( ${3:/* condition */} ) {\n\t${4:/* code */}\n}'
+    'body': 'if( ${1:/* condition */} ) {\n\t${2:/* code */}\n} else if( ${3:/* condition */} ) {\n\t${4:/* code */}\n}'
   'If ElseIf Else':
     'prefix': 'iffe'
-    'body': 'if( ${1:/* condition */} ) {\n\t${2:/* code */}\n}\nelse if( ${3:/* condition */} ) {\n\t${4:/* code */}\n}\nelse {\n\t${5:/* code */}\n}'
+    'body': 'if( ${1:/* condition */} ) {\n\t${2:/* code */}\n} else if( ${3:/* condition */} ) {\n\t${4:/* code */}\n} else {\n\t${5:/* code */}\n}'
   'Switch Statement':
     'prefix': 'switch'
     'body': 'switch( ${1:/* expression */} ) {\n\tcase ${2:/* value */}:\n}'
   'case':
     'prefix': 'cs'
     'body': 'case ${1:/* value */}:$0'
+  'Assert':
+    'prefix': 'assert'
+    'body': 'assert( ${1:/* condition */} );'
   'printf':
     'prefix': 'printf'
     'body': 'printf( "${1:%s}\\\\n", $2 );$3'

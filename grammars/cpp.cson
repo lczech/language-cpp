@@ -49,24 +49,38 @@
     'name': 'keyword.namespace.cast.cpp'
   }
 
-  # meta
-  {
-    'match': '\\b(std)((::)([a-zA-Z0-9_]+))+\\b'
-    'captures':
-      '1':
-        'name': 'meta.std.cpp'
-      '3':
-        'name': 'punctuation.namespace.cpp'
-      '4':
-        'name': 'meta.std.cpp'
-  }
-
   # punctuation
   {
     'match': '::'
     'name': 'punctuation.namespace.cpp'
   }
 
+  # meta
+  {
+    'match': '\\b(std)(::)([a-zA-Z0-9_]+)(::)([a-zA-Z0-9_]+)\\b'
+    'captures':
+      '1':
+        'name': 'meta.std.cpp'
+      '2':
+        'name': 'punctuation.namespace.cpp'
+      '3':
+        'name': 'meta.std.cpp'
+      '4':
+        'name': 'punctuation.namespace.cpp'
+      '5':
+        'name': 'meta.std.cpp'
+  }
+  {
+    'match': '\\b(std)(::)([a-zA-Z0-9_]+)\\b'
+    'captures':
+      '1':
+        'name': 'meta.std.cpp'
+      '2':
+        'name': 'punctuation.namespace.cpp'
+      '3':
+        'name': 'meta.std.cpp'
+  }
+  
   # storage
   {
     'match': '\\b(friend|explicit|virtual|override)\\b'
