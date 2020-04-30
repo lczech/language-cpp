@@ -83,7 +83,7 @@
   
   # storage
   {
-    'match': '\\b(friend|explicit|virtual|override)\\b'
+    'match': '\\b(final|friend|explicit|virtual|override)\\b'
     'name': 'storage.modifier.cpp'
   }
   {
